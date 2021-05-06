@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/style.css">
+    <title>Contact me - Charlotte Osborn</title>
+</head>
+<body>
+    <div id="banner">
+        <img src="/images/banner1.jpg" alt="Banner">
+    </div>
+    <!-- /banner -->
+    <header id="header">
+        <h1>CHARLOTTE OSBORN</h1>
+        <h2>FREELANCE FEATURES WRITER & COPYWRITER</h2>
+    </header>
+    <!-- /header -->
+    <nav id="navBar">
+        <ul id="navList">
+            <li id="navItem">
+                <a id="navLink" href="index.html">About</a>
+            </li>
+            <li id="navItem">
+                <a id="navLink" href="articles.html">Published Articles</a>
+            </li>
+            <li id="navItem">
+                <a id="navLink" href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- /nav  -->
+    <main>
+        <form id="contactForm" action="https://formspree.io/f/xayaqpgp" method="POST">
+            <ul>
+                <li class="formGroup">
+                    <input class="formEntry" 
+                            type="text" 
+                            name="name" 
+                            id="contactName" 
+                            placeholder="Name" 
+                            required>
+                </li>
+                <li class="formGroup">
+                    <input class="formEntry" 
+                            type="email" 
+                            name="email" 
+                            id="contactEmail" 
+                            placeholder="Email" 
+                            required>
+                </li>  
+                <li class="formGroup">
+                    <input class="formEntry" 
+                            type="text" 
+                            name="subject" 
+                            id="contactSubject" 
+                            placeholder="Subject" 
+                            required>
+                </li>
+                <li id="contactBox" class="formGroup">
+                    <textarea class="formEntry"
+                            maxlength="4000"
+                            name="message"
+                            id="contactMessage"
+                            placeholder="Message"></textarea>
+                </li>
+                <li class="formGroup">
+                <button type="submit" id="submit" class="submitButton">
+                    Send Message
+                </button>
+                </li>    
+            </ul>
+        </form>
+    </main>
+    <!-- /main -->
+    <footer>
+        <div id="socialMediaLinks">
+            <a href="https://www.linkedin.com/in/charlotte-osborn-100bb570/" class="link" target="_blank">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:charlotte.osborn@hotmail.co.uk" class="link">
+                <i class="fas fa-envelope-square"></i>
+            </a>
+        </div>
+        <p id="copyright">© 2021 Charlotte Osborn</p>
+        <p id="copyright"> Website by <a id="jamesThomas" href="https://jcgthomas.github.io/" target="_blank">James Thomas</a></p>
+    </footer>
+</body>
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="script.js"></script>
+</html>
