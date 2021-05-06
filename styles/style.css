@@ -192,6 +192,8 @@ footer {
   width: 250px;
   height: 250px;
   background: #f2f2f2;
+  -webkit-box-shadow: 0 0 30px 5px #bfbfbf;
+          box-shadow: 0 0 30px 5px #bfbfbf;
   margin: 20px;
   position: relative;
   -webkit-animation-delay: 0.5s;
