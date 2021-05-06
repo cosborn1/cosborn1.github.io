@@ -101,9 +101,9 @@ main {
 #gallery {
   max-width: 500px;
   max-height: 500px;
-  width: 80vw;
-  height: 80vw;
-  margin-bottom: 20px;
+  margin: 0 10px 20px 10px;
+  width: 90vw;
+  height: 90vw;
   background: #cccccc;
   position: relative;
   overflow: hidden;
@@ -121,7 +121,8 @@ main {
 
 #about {
   max-width: 500px;
-  margin: 0 10px;
+  width: 90vw;
+  font-size: 1.09rem;
 }
 
 #aboutText {
@@ -132,7 +133,7 @@ main {
 
 footer {
   padding: 10px;
-  background: #cccccc;
+  background: #b3b3b3;
   color: white;
   text-align: center;
   bottom: 0px;
@@ -159,7 +160,7 @@ footer {
   color: white;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-  font-size: 26px;
+  font-size: 2rem;
 }
 
 .link:hover {
@@ -197,8 +198,6 @@ footer {
           box-shadow: 0 0 30px 5px #bfbfbf;
   margin: 20px;
   position: relative;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
 }
 
 .article img,
@@ -258,18 +257,21 @@ footer {
   pointer-events: none;
 }
 
-.article:hover img {
+.article:hover img,
+.article:focus img {
   -webkit-filter: brightness(70%) blur(3px);
           filter: brightness(70%) blur(3px);
 }
 
-.article:hover .articleHover {
+.article:hover .articleHover,
+.article:focus .articleHover {
   visibility: visible;
   opacity: 100%;
   top: 0px;
 }
 
-.article:hover .viewArticle {
+.article:hover .viewArticle,
+.article:focus .viewArticle {
   visibility: visible;
   opacity: 100%;
   bottom: 10px;
@@ -307,17 +309,24 @@ footer {
 }
 
 #contactForm ul .formGroup .formEntry {
-  padding: 5px;
+  padding: 8px 5px 5px 5px;
   width: 90vw;
   max-width: 600px;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  border: 1px solid gray;
 }
 
 #contactForm ul .formGroup textarea {
   min-height: 80px;
   min-width: 300px;
+  border-radius: 3px;
 }
 
 #contactForm ul button {
   padding: 5px 20px;
+  font-size: 1.1rem;
+  border-radius: 3px;
+  border: 1px solid gray;
 }
 /*# sourceMappingURL=style.css.map */

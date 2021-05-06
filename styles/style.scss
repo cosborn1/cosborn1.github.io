@@ -84,9 +84,9 @@ main {
 #gallery {
     max-width: 500px;
     max-height: 500px;
-    width: 80vw;
-    height: 80vw;
-    margin-bottom: 20px;
+    margin: 0 10px 20px 10px;
+    width: 90vw;
+    height: 90vw;
     background:hsl(0, 0%, 80%);
     position: relative;
     overflow: hidden;
@@ -103,7 +103,8 @@ main {
 
 #about {
     max-width: 500px;
-    margin: 0 10px;
+    width: 90vw;
+    font-size: 1.09rem;
 }
 
 #aboutText {
@@ -114,7 +115,7 @@ main {
 
 footer {
     padding: 10px;
-    background:hsl(0, 0%, 80%);
+    background:hsl(0, 0%, 70%);
     color: white;
     text-align: center;
     bottom: 0px;
@@ -133,7 +134,7 @@ footer {
     margin: 2px 5px;
     color: white;
     transition: 0.2s;
-    font-size: 26px;
+    font-size: 2rem;
 }
 
 .link:hover {
@@ -165,7 +166,6 @@ footer {
     box-shadow: 0 0 30px 5px hsl(0, 0%, 75%);
     margin: 20px;
     position: relative;
-    animation-delay: 0.5s;
 }
 
 .article img,
@@ -218,17 +218,20 @@ footer {
 }
 
 .article {
-    &:hover img {
+    &:hover img,
+    &:focus img {
         filter: brightness(70%) blur(3px);
     }
 
-    &:hover .articleHover {
+    &:hover .articleHover,
+    &:focus .articleHover {
         visibility: visible;
         opacity: 100%;
         top: 0px;
     }
 
-    &:hover .viewArticle {
+    &:hover .viewArticle,
+    &:focus .viewArticle {
         visibility: visible;
         opacity: 100%;
         bottom: 10px;
@@ -252,18 +255,25 @@ footer {
         list-style: none;
 
         & .formEntry {
-            padding: 5px;
+            padding: 8px 5px 5px 5px ;
             width: 90vw;
             max-width: 600px;
+            font-size: 1.1rem;
+            border-radius: 3px;
+            border: 1px solid hsl(0, 0%, 50%);
         }
 
         & textarea {
             min-height: 80px;
             min-width: 300px;
+            border-radius: 3px;
         }
     }
 
     & button {
         padding: 5px 20px;
+        font-size: 1.1rem;
+        border-radius: 3px;
+        border: 1px solid hsl(0, 0%, 50%);
     }
 }
