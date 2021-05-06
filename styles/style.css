@@ -83,7 +83,7 @@ h2 {
 }
 
 main {
-  max-width: 800px;
+  max-width: 900px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -124,6 +124,7 @@ main {
 }
 
 #aboutText {
+  text-align: justify;
   margin: 20px 0;
   line-height: 1.1em;
 }
@@ -204,6 +205,9 @@ footer {
   position: absolute;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5rem;
 }
 
 .viewArticle {
@@ -213,15 +217,18 @@ footer {
   background: #0d0d0d;
   left: 125px;
   bottom: 0px;
-  padding: 5px 10px;
+  padding: 7px 12px;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
-  font-size: 18px;
+  font-size: 16px;
   opacity: 0%;
   visibility: hidden;
   -webkit-transition: 0.3s;
   transition: 0.3s;
   pointer-events: none;
+  width: 90%;
+  text-align: center;
+  font-weight: 400;
 }
 
 .viewArticle:hover {
